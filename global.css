@@ -1,0 +1,30 @@
+*::-webkit-scrollbar{
+    display: none !important;
+}
+
+.not-available {
+    background: #ffffff !important;
+}
+
+.weekend {
+    background: #3a3399 !important;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.available {
+    background: #307759 !important;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+td, tr {
+    text-align: center;
+}
+
+.monthDay {
+    min-width: 40px;
+}
+
+
+

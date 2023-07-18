@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="global.css">
+    <title>Calendar</title>
+
+</head>
+<body>
+    <div class="container-full overflow-scroll">
+        <div class="row">
+            <div class="col d-flex flex-col justify-content-end">
+                <div class="d-flex align-items-center">
+                    <button class="btn d-flex flex-col align-items-center" onClick="handleActualMonth('prev')">
+                        <iconify-icon icon="fa-solid:angle-left"></iconify-icon>
+                    </button>
+                    <p id="selectedDate" class="mb-0"></p>
+                    <button class="btn d-flex flex-col align-items-center" onClick="handleActualMonth('next')">
+                        <iconify-icon icon="fa-solid:angle-right"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table id="tb_horas_diponiveis" class="w-full table table-light">
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
